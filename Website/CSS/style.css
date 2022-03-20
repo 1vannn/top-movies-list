@@ -1,32 +1,42 @@
 ul {
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px;
+    display: inline-block;
+}
+
+li, a {
     list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-}
-
-li {
-    float: right;
     font-size: 20px;
+    font-family: Tahoma;
+    color: black;
+
 }
 
-li a {
-    display: block;
-    color: #666;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+blockquote {
+    margin: 0;
 }
 
-li a:hover {
-    background-color: #ddd;
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
 }
 
-li a.active {
-    color: white;
-    background-color: #04AA6D;
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
 }
 
 body {
-    
+    background-color: white;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
